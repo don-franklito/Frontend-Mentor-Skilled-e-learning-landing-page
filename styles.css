@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --color-1: #666CA3;
+    --color-2: #13183F;
+    --color-3: #83869A;
+    --color-4: #F74780;
+    --color-5: #FFA7C3;
+    --color-6: #fff;
+    --linear-1: linear-gradient(#F02AA6, #FF6F48);
+    --linear-2: linear-gradient(#4851FF, #F02AA6);
+    --font-jakarta: "Plus Jakarta Sans";
+    --heading-xl: 56px;
+    --heading-l: 40px;
+    --heading-m: 32px;
+    --heading-s: 24px;
+    --body-m: 18px;
+    --body-s: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-jakarta), sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(var(--color-6), #F0F1FF);
+    overflow-x: hidden;
+}
+
+button {
+    color: var(--color-6);
+    border-radius: 28px;
+    padding: .875rem 2rem;
+    border: none;
+    font-size: var(--body-m);
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    padding: 25px 10px;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+section {
+    padding: 25px 10px;
+}
+
+.button-1 {
+    background-color: var(--color-2);  
+}
+
+.button-1:hover {
+    cursor: pointer;
+    background-color: var(--color-1);
+}
+
+.button-2 {
+    background: var(--linear-1);
+}
+
+.button-2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.button-3 {
+    background: var(--linear-2);
+}
+
+.button-3:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.introduction {
+    width: 100%;
+    max-width: 1100px;
+    margin: 8rem auto 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.welcome {
+    max-width: 460px;
+}
+
+.heading-xl {
+    font-size: var(--heading-xl);
+    color: var(--color-2);
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.paragraph {
+    font-size: var(--body-m);
+    color: var(--color-3);
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.card-primary {
+    background: var(--linear-1);
+    padding: 45px 35px;
+    font-size: var(--heading-m);
+    color: var(--color-6);
+    font-weight: 700;
+    border-radius: 15px;
+    max-width: 350px;
+}
+
+.card {
+    background-color: var(--color-6);
+    padding: 45px 30px;
+    border-radius: 15px;
+    max-width: 350px;
+    position: relative;
+}
+
+.card-icon {
+    position: absolute;
+    top: -1.75rem;
+}
+
+.card-link {
+    text-decoration: none;
+    font-size: var(--body-m);
+    font-weight: 700;
+    color: var(--color-4);
+}
+
+.card-paragraph {
+    font-size: var(--body-m);
+    color: var(--color-3);
+    line-height: 1.6;
+    text-align: left;
+    min-height: 60%;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: var(--heading-s);
+    color: var(--color-2);
+    margin-bottom: 1rem;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 4rem;
+    max-width: 1100px;
+    margin: 10rem auto 7rem;
+}
+
+.logo {
+    width: 100px;
+    height: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color-2);
+}
+
+.footer-body {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.image-hero {
+    position: absolute;
+    z-index: -9999;
+    top: 0;
+    margin-top: -12rem;
+    right: 0;
+    margin-right: -23rem; 
+}
+
+@media (max-width: 992px) {
+    .courses {
+        max-width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        column-gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 388px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-paragraph, .paragraph { 
+        font-size: var(--body-s);
+    }
+
+    .card-primary {
+        max-width: 388px;
+    }
+
+    .heading-xl {
+        font-size: var(--heading-l);
+    }
+}
+
+@media (max-width: 768px) {
+    .image-hero {
+        position: relative;
+        margin-top: 0;
+        margin-right: 0; 
+    }
+
+    .introduction {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .courses {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 572px) { 
+    .courses {
+        width: 100%;
+        max-width: 500px;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+    }
+}
