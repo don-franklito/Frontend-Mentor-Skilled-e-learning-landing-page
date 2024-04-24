@@ -29,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(var(--color-6), #F0F1FF);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 button {
@@ -124,7 +124,7 @@ section {
     background-color: var(--color-6);
     padding: 45px 30px;
     border-radius: 15px;
-    max-width: 350px;
+    max-width: max-content;
     position: relative;
 }
 
@@ -203,7 +203,7 @@ footer {
 
     .card {
         width: 100%;
-        max-width: 388px;
+        max-width: max-content;
     }
 
     .card-title {
@@ -226,26 +226,21 @@ footer {
 @media (max-width: 768px) {
     .image-hero {
         position: relative;
-        margin-top: 0;
-        margin-right: 0; 
+        margin: 0 auto;
     }
 
     .introduction {
         flex-direction: column;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0 auto;
     }
 
     .courses {
-        margin-top: 0;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 572px) { 
     .courses {
-        width: 100%;
-        max-width: 500px;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 0;
     }
 }

@@ -86,3 +86,7 @@ The more specific you are with your questions the more likely it is that another
 We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
+
+Changes
+-- Max-width card value per max-content
+-- width: 100%
